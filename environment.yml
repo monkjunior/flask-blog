@@ -1,4 +1,4 @@
-name: base
+name: flask-blog
 channels:
   - defaults
 dependencies:
