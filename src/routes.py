@@ -11,6 +11,8 @@ from flask_login import login_user, current_user, logout_user, login_required
 @app.route("/home")
 def home():
     posts = Post.query.all()
+    # posts is a list
+    # [Post('Title1', 'Date created'), Post('Title2', 'Date created'), ...]
     return render_template('home.html', posts=posts)
 
 
